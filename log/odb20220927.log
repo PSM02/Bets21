@@ -1,0 +1,202 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-09-27 19:10:16 #1 store] 
+Database 'C:\Users\marti\Desktop\8\Bets21-\src\main\resources\bets.temp' is opened by 10732@LAPTOP-3HJP2ED4
+
+[2022-09-27 19:10:17 #2 type.registry] 
+New type domain.User
+
+[2022-09-27 19:10:17 #3 type.registry] 
+New type domain.Admin
+
+[2022-09-27 19:10:17 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-09-27 19:10:17 #5 type.registry] 
+New type domain.Mezua
+
+[2022-09-27 19:10:17 #6 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+[2022-09-27 19:10:17 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2022-09-27 19:10:17 #8 type] 
+Type domain.Mezua is not enhanced.
+
+[2022-09-27 19:10:17 #9 type.registry] 
+New type domain.Registered
+
+[2022-09-27 19:10:17 #10 type] 
+Type domain.Registered is not enhanced.
+
+[2022-09-27 19:10:17 #11 type.registry] 
+New type domain.Boleto
+
+[2022-09-27 19:10:17 #12 type.registry] 
+New type java.util.Vector<domain.Boleto>
+
+[2022-09-27 19:10:17 #13 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-09-27 19:10:17 #14 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-09-27 19:10:17 #15 type.registry] 
+New type domain.Apustua
+
+[2022-09-27 19:10:17 #16 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-09-27 19:10:17 #17 type.registry] 
+New type domain.Mugimendua
+
+[2022-09-27 19:10:17 #18 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2022-09-27 19:10:17 #19 type] 
+Type domain.Boleto is not enhanced.
+
+[2022-09-27 19:10:17 #20 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-09-27 19:10:17 #21 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-09-27 19:10:17 #22 type.registry] 
+New type domain.Kuota
+
+[2022-09-27 19:10:17 #23 type.registry] 
+New type java.util.Vector<domain.Kuota>
+
+[2022-09-27 19:10:17 #24 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2022-09-27 19:10:17 #25 type] 
+Type domain.Kuota is not enhanced.
+
+[2022-09-27 19:10:17 #26 type.registry] 
+New type domain.Question
+
+[2022-09-27 19:10:17 #27 type] 
+Type domain.Question is not enhanced.
+
+[2022-09-27 19:10:17 #28 type.registry] 
+New type domain.Event
+
+[2022-09-27 19:10:17 #29 type] 
+Type domain.Event is not enhanced.
+
+[2022-09-27 19:10:17 #30 type.registry] 
+New type java.util.Vector<domain.Question>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-09-27 19:23:38 #1 server] 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at com.objectdb.o.SMR.I(SMR.java:259)
+	at com.objectdb.o.SMR.n(SMR.java:159)
+	at com.objectdb.o.TOL.run(TOL.java:116)
+	at com.objectdb.Server.runCommand(Server.java:193)
+	at com.objectdb.Server.run(Server.java:102)
+	at com.objectdb.ServerRunner.main(ServerRunner.java:31)
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-09-27 19:27:31 #1 store] 
+Database 'C:\Users\marti\Desktop\8\Bets21-\src\main\resources\bets.temp' is opened by 9904@LAPTOP-3HJP2ED4
+
+[2022-09-27 19:27:31 #2 type.registry] 
+New type domain.User
+
+[2022-09-27 19:27:31 #3 type.registry] 
+New type domain.Admin
+
+[2022-09-27 19:27:31 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-09-27 19:27:31 #5 type.registry] 
+New type domain.Mezua
+
+[2022-09-27 19:27:31 #6 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+[2022-09-27 19:27:31 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2022-09-27 19:27:31 #8 type] 
+Type domain.Mezua is not enhanced.
+
+[2022-09-27 19:27:31 #9 type.registry] 
+New type domain.Registered
+
+[2022-09-27 19:27:31 #10 type] 
+Type domain.Registered is not enhanced.
+
+[2022-09-27 19:27:31 #11 type.registry] 
+New type domain.Boleto
+
+[2022-09-27 19:27:31 #12 type.registry] 
+New type java.util.Vector<domain.Boleto>
+
+[2022-09-27 19:27:31 #13 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-09-27 19:27:31 #14 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-09-27 19:27:31 #15 type.registry] 
+New type domain.Apustua
+
+[2022-09-27 19:27:31 #16 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-09-27 19:27:31 #17 type.registry] 
+New type domain.Mugimendua
+
+[2022-09-27 19:27:31 #18 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2022-09-27 19:27:31 #19 type] 
+Type domain.Boleto is not enhanced.
+
+[2022-09-27 19:27:31 #20 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-09-27 19:27:31 #21 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-09-27 19:27:31 #22 type.registry] 
+New type domain.Kuota
+
+[2022-09-27 19:27:31 #23 type.registry] 
+New type java.util.Vector<domain.Kuota>
+
+[2022-09-27 19:27:31 #24 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2022-09-27 19:27:31 #25 type] 
+Type domain.Kuota is not enhanced.
+
+[2022-09-27 19:27:31 #26 type.registry] 
+New type domain.Question
+
+[2022-09-27 19:27:31 #27 type] 
+Type domain.Question is not enhanced.
+
+[2022-09-27 19:27:31 #28 type.registry] 
+New type domain.Event
+
+[2022-09-27 19:27:31 #29 type] 
+Type domain.Event is not enhanced.
+
+[2022-09-27 19:27:31 #30 type.registry] 
+New type java.util.Vector<domain.Question>
+
