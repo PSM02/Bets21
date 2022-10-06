@@ -1,5 +1,6 @@
 package businessLogic;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Vector;
@@ -8,7 +9,6 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 import domain.Event;
-//import domain.Booking;
 import domain.Question;
 import domain.Registered;
 import domain.User;

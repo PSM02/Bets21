@@ -93,4 +93,10 @@ public class Kuota {
 	public void addApustua(Apustua apustua) {
 		this.apustuak.add(apustua);
 	}
+	
+	public Apustua addApustua(float dirua, Registered user, boolean kop, Boleto b) {
+		Apustua a = new Apustua(dirua, user, this, kop, b);
+		this.apustuak.add(a);
+		return a;
+	}
 }

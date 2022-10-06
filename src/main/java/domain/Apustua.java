@@ -35,6 +35,14 @@ public class Apustua {
 		kopiatuta = kop;
 		boleto = b;
 	}
+	
+	public Apustua(float dirua, Registered user, Kuota kuota, boolean kop, Boleto b) {
+		this.user = user;
+		this.dirua = dirua;
+		this.kuotak.add(kuota);
+		kopiatuta = kop;
+		boleto = b;
+	}
 
 	public Apustua(Integer betNumber, float dirua, Registered user, Vector<Kuota> kuota, boolean kop) {
 		super();
