@@ -598,4 +598,19 @@ public class DataAccess {
 		db.remove(db.find(Mezua.class, u1.getMezuaErabiltzaile(u2)));
 		db.getTransaction().commit();
 	}
+	
+	public List<Question> getAllQuestions(){
+		TypedQuery<Question> query = db.createQuery("SELECT q FROM Question q", Question.class);
+		return query.getResultList();
+	}
+	
+	public List<Kuota> getAllFees(){
+		TypedQuery<Kuota> query = db.createQuery("SELECT k FROM Kuota k", Kuota.class);
+		return query.getResultList();
+	}
+	
+	public List<Apustua> getAllBets(){
+		TypedQuery<Apustua> query = db.createQuery("SELECT a FROM Apustua a", Apustua.class);
+		return query.getResultList();
+	}
 }
