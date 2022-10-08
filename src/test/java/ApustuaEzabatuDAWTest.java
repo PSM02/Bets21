@@ -68,4 +68,23 @@ public class ApustuaEzabatuDAWTest {
 			sut.close();
 		}
 	}
+	
+	@Test
+	public void test3() { //Apustua eta erabiltzailea datubasean
+		Registered u1 = new Registered("Markel", "mossi");
+		try {
+			sut.open(false);
+			sut.apustuEgin(u1, 3, null, false, 0);
+			Vector<Apustua> a=u1.getApustuak();
+			sut.apustuaEzabatu(u1, a.get(0).getBetNumber());
+			assertEquals(null, u1.getApustuak().get(0));
+			
+		}catch(Exception e) {
+			assertTrue(false);
+		}finally {
+			sut.open(false);
+			sut.removeUser(u1);
+			sut.close();
+		}
+	}
 }
