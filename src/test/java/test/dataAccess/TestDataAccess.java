@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.ResourceBundle;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -12,8 +13,11 @@ import javax.persistence.TypedQuery;
 
 import configuration.ConfigXML;
 import domain.Admin;
+import domain.Apustua;
 import domain.Event;
+import domain.Jarraitzailea;
 import domain.Mezua;
+import domain.Mugimendua;
 import domain.Question;
 import domain.Registered;
 import domain.User;
@@ -159,5 +163,32 @@ public class TestDataAccess {
 				db.getTransaction().commit();
 			}
 		}
+		
+		public void apustuaEzabatu(Registered u, Integer apustuaID) {
+			Apustua a = db.find(Apustua.class, apustuaID);
+			Registered r = (Registered) db.find(User.class, u);
+			r.setDirua((float) (r.getDirua() + a.getDirua()));
+			Mugimendua m = new Mugimendua(a.getDirua(),
+					ResourceBundle.getBundle("Etiquetas").getString("getbycancellation"), r);
+			r.addMugimendua(m);
+			db.getTransaction().begin();
+			db.remove(a);
+			db.persist(r);
+			db.getTransaction().commit();
+			for (Jarraitzailea f : r.getFollowers()) {
+				Apustua apustu = null;
+				for (Apustua apus : f.getJarraitzailea().getApustuak()) {
+					if (apus.isKopiatuta()) {
+						if (apus.getKuota().equals(a.getKuota()) && apus.getDirua() == a.getDirua() * f.getMurriztapena()) {
+							apustu = apus;
+						}
+					}
+				}
+				if (apustu != null) {
+					apustuaEzabatu(f.getJarraitzailea(), apustu.getBetNumber());
+				}
+			}
+		}
+
 }
 

@@ -61,7 +61,7 @@ public class MezuaBidaliDAWTest {
 		}
 	}
 	
-	//Bi erabiltzaileak datubasean daude, baiza ez bien arteko elkarrizketa, mezua utsa da
+	//Bi erabiltzaileak datubasean daude, baina ez bien arteko elkarrizketa, mezua hutsa da
 	@Test
 	public void test2() {
 		User u1 = new User("Pepito", "123");
