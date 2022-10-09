@@ -58,8 +58,11 @@ public class Mezua {
 	public void setMezua(String mezua) {
 		this.mezua = mezua;
 	}
-	public boolean equals(Mezua obj) {
-		if(this.mezua.equals(obj.mezua) && this.User1.equals(obj.User1) && this.User2.equals(obj.User2)) {
+	
+	@Override
+	public boolean equals(Object obj) {
+		Mezua m = (Mezua)obj;
+		if(this.mezua.equals(m.mezua) && this.User1.equals(m.User1) && this.User2.equals(m.User2)) {
 			return true;
 		} else return false;
 	}
