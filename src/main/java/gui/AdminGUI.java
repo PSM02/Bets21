@@ -1,6 +1,5 @@
 package gui;
 
-import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,17 +7,14 @@ import java.util.ResourceBundle;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 
 import domain.Admin;
-import domain.Registered;
 import domain.User;
 
 import javax.swing.JButton;
 
 public class AdminGUI extends JFrame{
 
-	private JFrame frame;
 	private User user;
 	private JPanel contentPane;
 	private JButton btnNewButton;
@@ -30,7 +26,6 @@ public class AdminGUI extends JFrame{
 	private JButton btnNewButton_6;
 	private JButton btnNewButton_7;
 	private JButton btnNewButton_8;
-
 	/**
 	 * Launch the application.
 	 */
@@ -60,7 +55,6 @@ public class AdminGUI extends JFrame{
 	 */
 	private void initialize() {
 		setBounds(100, 100, 450, 300);
-		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		contentPane = new JPanel();
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -135,7 +129,7 @@ public class AdminGUI extends JFrame{
 		btnNewButton_6 = new JButton(ResourceBundle.getBundle("Etiquetas").getString("EnviarMensaje")); //$NON-NLS-1$ //$NON-NLS-2$
 		btnNewButton_6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JFrame a = new MezuaBidaliGUI((Admin)user);
+				JFrame a = new MezuaBidaliGUI(user);
 
 				a.setVisible(true);	
 			}

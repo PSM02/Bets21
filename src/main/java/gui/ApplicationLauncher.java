@@ -39,7 +39,6 @@ public class ApplicationLauncher {
 			if (c.isBusinessLogicLocal()) {
 				
 				//In this option the DataAccess is created by FacadeImplementationWS
-				//appFacadeInterface=new BLFacadeImplementation();
 
 				//In this option, you can parameterize the DataAccess (e.g. a Mock DataAccess object)
 

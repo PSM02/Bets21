@@ -3,11 +3,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-//import org.mockito.ArgumentCaptor;
-//import org.mockito.InjectMocks;
-//import org.mockito.Mock;
-//import org.mockito.Mockito;
-//import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.ArgumentCaptor;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import businessLogic.BLFacade;
 import businessLogic.BLFacadeImplementation;
@@ -15,13 +15,13 @@ import dataAccess.DataAccess;
 import domain.Event;
 import domain.User;
 
-//@RunWith(MockitoJUnitRunner.class)
+@RunWith(MockitoJUnitRunner.class)
 public class MezuaBidaliMOCKINT {
 
-	//@Mock
+	@Mock
 	DataAccess da;
 	
-    //@InjectMocks
+    @InjectMocks
     BLFacadeImplementation sut;
 	
 	@Test
@@ -32,7 +32,7 @@ public class MezuaBidaliMOCKINT {
 		String mezua = "Kaixo";
 		try {
 		
-		//Mockito.doThrow(new Exception("user not in the db")).when(da).mezuaBidali(mezua, u1, u2);
+		Mockito.doThrow(new Exception("user not in the db")).when(da).mezuaBidali(mezua, u1, u2);
 		
 		sut.mezuaBidali(mezua, u1, u2);
 		
@@ -50,17 +50,17 @@ public class MezuaBidaliMOCKINT {
 		User u2 = new User("Patxi", "123");
 		String mezua = "";
 		
-		//ArgumentCaptor<User> user1Cap = ArgumentCaptor.forClass(User.class);
-		//ArgumentCaptor<String> user2Cap = ArgumentCaptor.forClass(String.class);
-		//ArgumentCaptor<String> mezuCap = ArgumentCaptor.forClass(String.class);
+		ArgumentCaptor<User> user1Cap = ArgumentCaptor.forClass(User.class);
+		ArgumentCaptor<String> user2Cap = ArgumentCaptor.forClass(String.class);
+		ArgumentCaptor<String> mezuCap = ArgumentCaptor.forClass(String.class);
 		
 		sut.mezuaBidali(mezua, u1, "Patxi");
 		
-		//Mockito.verify(da,Mockito.times(1)).mezuaBidali(mezuCap.capture(),user1Cap.capture(), user2Cap.capture());
+		Mockito.verify(da,Mockito.times(1)).mezuaBidali(mezuCap.capture(),user1Cap.capture(), user2Cap.capture());
 		
-		//assertEquals(mezuCap.getValue(),mezua);
-		//assertEquals(user1Cap.getValue(),u1);
-		//assertEquals(user2Cap.getValue(),"Patxi");
+		assertEquals(mezuCap.getValue(),mezua);
+		assertEquals(user1Cap.getValue(),u1);
+		assertEquals(user2Cap.getValue(),"Patxi");
 	}
 
 	@Test
@@ -71,7 +71,7 @@ public class MezuaBidaliMOCKINT {
 		String mezua = "Kaixo";
 		try {
 		
-		//Mockito.doThrow(new Exception("User1 is null")).when(da).mezuaBidali(mezua, null, u2);
+		Mockito.doThrow(new Exception("User1 is null")).when(da).mezuaBidali(mezua, null, u2);
 		
 		sut.mezuaBidali(mezua, null, u2);
 		
@@ -90,7 +90,7 @@ public class MezuaBidaliMOCKINT {
 		String mezua = "Kaixo";
 		try {
 		
-		//Mockito.doThrow(new Exception("User1 is null")).when(da).mezuaBidali(null, u1, u2);
+		Mockito.doThrow(new Exception("User1 is null")).when(da).mezuaBidali(null, u1, u2);
 		
 		sut.mezuaBidali(null, u1, u2);
 		

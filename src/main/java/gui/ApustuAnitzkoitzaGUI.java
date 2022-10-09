@@ -1,6 +1,5 @@
 package gui;
 
-import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Rectangle;
@@ -40,7 +39,6 @@ import domain.Registered;
 
 public class ApustuAnitzkoitzaGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
-	private Registered registered;
 	private DefaultComboBoxModel<String> Kuotak = new DefaultComboBoxModel<String>();
 	private DefaultComboBoxModel<String> boletoak = new DefaultComboBoxModel<String>();
 
@@ -202,7 +200,7 @@ public class ApustuAnitzkoitzaGUI extends JFrame {
 		scrollPaneQueries.setBounds(new Rectangle(40, 253, 378, 116));
 
 		tableEvents.addMouseListener(new MouseAdapter() {
-			
+			@Override
 			public void mouseClicked(MouseEvent e) {
 				int i=tableEvents.getSelectedRow();
 				domain.Event ev=(domain.Event)tableModelEvents.getValueAt(i,2); // obtain ev object
