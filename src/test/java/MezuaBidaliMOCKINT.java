@@ -90,7 +90,7 @@ public class MezuaBidaliMOCKINT {
 		String mezua = "Kaixo";
 		try {
 		
-		Mockito.doThrow(new Exception("User1 is null")).when(da).mezuaBidali(null, u1, u2);
+		Mockito.doThrow(new Exception("mezua is null")).when(da).mezuaBidali(null, u1, u2);
 		
 		sut.mezuaBidali(null, u1, u2);
 		

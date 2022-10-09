@@ -14,6 +14,7 @@ import dataAccess.DataAccess;
 import domain.Question;
 import domain.Registered;
 import domain.User;
+import domain.Apustua;
 import domain.Boleto;
 import domain.Event;
 import domain.Existitu_adminDa;
@@ -272,6 +273,39 @@ public class BLFacadeImplementation  implements BLFacade {
     public void removeMezua(User u1, String u2) {
     	dbManager.open(false);
     	dbManager.removeMessage(u1, u2);
+    	dbManager.close();
+    }
+    
+    public void addEvent(Event e) {
+    	dbManager.open(false);
+    	dbManager.addEvent(e);
+    	dbManager.close();
+    }
+    
+    public List<Question> getAllQuestions(){
+    	dbManager.open(false);
+    	List<Question> ema = dbManager.getAllQuestions();
+    	dbManager.close();
+    	return ema;
+    }
+    
+    public List<Kuota> getAllFees(){
+    	dbManager.open(false);
+    	List<Kuota> ema = dbManager.getAllFees();
+    	dbManager.close();
+    	return ema;
+    }
+    
+    public List<Apustua> getAllBets(){
+    	dbManager.open(false);
+    	List<Apustua> ema = dbManager.getAllBets();
+    	dbManager.close();
+    	return ema;
+    }
+    
+    public void storeUser(User u) {
+    	dbManager.open(false);
+    	dbManager.storeUser(u);;
     	dbManager.close();
     }
 }

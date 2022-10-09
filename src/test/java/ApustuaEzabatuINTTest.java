@@ -1,12 +1,10 @@
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.Vector;
 
 import org.junit.BeforeClass;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import businessLogic.BLFacadeImplementation;
 import domain.Apustua;
@@ -38,6 +36,7 @@ class ApustuaEzabatuINTTest {
 
 	}
 	
+	@Test
 	public void test2() {//Erabiltzailea ez dago datubasean
 		
 		Registered u1 = new Registered("Ibon", "Ibonaldo");
@@ -52,6 +51,8 @@ class ApustuaEzabatuINTTest {
 		}
 		
 	}
+	
+	@Test
 	public void test3() { //Apustua eta erabiltzailea datubasean
 		Registered u1 = new Registered("Markel", "mossi");
 		try {
