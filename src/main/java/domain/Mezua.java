@@ -58,12 +58,22 @@ public class Mezua {
 	public void setMezua(String mezua) {
 		this.mezua = mezua;
 	}
-	
+	@Override
+	public int hashCode() {
+		return Objects.hash(MezuId, User1, User2, mezua);
+	}
 	@Override
 	public boolean equals(Object obj) {
-		Mezua m = (Mezua)obj;
-		if(this.mezua.equals(m.mezua) && this.User1.equals(m.User1) && this.User2.equals(m.User2)) {
+		if (this == obj)
 			return true;
-		} else return false;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Mezua other = (Mezua) obj;
+		return Objects.equals(MezuId, other.MezuId) && Objects.equals(User1, other.User1)
+				&& Objects.equals(User2, other.User2) && Objects.equals(mezua, other.mezua);
 	}
+	
+	
 }
