@@ -1,5 +1,6 @@
 package domain;
 
+import java.util.ArrayList;
 import java.util.Vector;
 
 import javax.persistence.CascadeType;
@@ -11,11 +12,11 @@ import javax.persistence.OneToMany;
 public class Registered extends User{
 	
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
-	private Vector<Mugimendua> mugimenduak=new Vector<Mugimendua>();
+	private ArrayList<Mugimendua> mugimenduak=new ArrayList<Mugimendua>();
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
-	private Vector<Apustua> apustuak=new Vector<Apustua>();
+	private ArrayList<Apustua> apustuak=new ArrayList<Apustua>();
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
-	private Vector<Jarraitzailea> followers=new Vector<Jarraitzailea>();
+	private ArrayList<Jarraitzailea> followers=new ArrayList<Jarraitzailea>();
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
 	private Vector<Boleto> boletoak=new Vector<Boleto>();
 
@@ -31,27 +32,27 @@ public class Registered extends User{
 		apustuak.add(a);
 	}
 
-	public Vector<Mugimendua> getMugimenduak() {
+	public ArrayList<Mugimendua> getMugimenduak() {
 		return mugimenduak;
 	}
 
-	public void setMugimenduak(Vector<Mugimendua> mugimenduak) {
+	public void setMugimenduak(ArrayList<Mugimendua> mugimenduak) {
 		this.mugimenduak = mugimenduak;
 	}
 
-	public Vector<Apustua> getApustuak() {
+	public ArrayList<Apustua> getApustuak() {
 		return apustuak;
 	}
 
-	public void setApustuak(Vector<Apustua> apustuak) {
+	public void setApustuak(ArrayList<Apustua> apustuak) {
 		this.apustuak = apustuak;
 	}
 
-	public Vector<Jarraitzailea> getFollowers() {
+	public ArrayList<Jarraitzailea> getFollowers() {
 		return followers;
 	}
 
-	public void setFollowers(Vector<Jarraitzailea> followers) {
+	public void setFollowers(ArrayList<Jarraitzailea> followers) {
 		this.followers = followers;
 	}
 	

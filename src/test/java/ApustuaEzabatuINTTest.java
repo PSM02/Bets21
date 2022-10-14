@@ -1,6 +1,8 @@
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+
+import java.util.ArrayList;
 import java.util.Vector;
 
 import org.junit.BeforeClass;
@@ -58,7 +60,7 @@ class ApustuaEzabatuINTTest {
 		try {
 			sut.register("Markel", "mossi");
 			sut.apustuEgin(u1, 3, null, false, 0);
-			Vector<Apustua> a=u1.getApustuak();
+			ArrayList<Apustua> a=u1.getApustuak();
 			sut.apustuaEzabatu(u1, a.get(0).getBetNumber());
 			assertEquals(null, u1.getApustuak().get(0));
 			

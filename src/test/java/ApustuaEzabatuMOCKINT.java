@@ -3,6 +3,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
 import java.util.Vector;
 
 import org.junit.jupiter.api.Test;
@@ -63,7 +64,7 @@ class ApustuaEzabatuMOCKINT {
 		try {
 			sut.register("Markel", "mossi");
 			sut.apustuEgin(u1, 3, null, false, 0);
-			Vector<Apustua> a=u1.getApustuak();
+			ArrayList<Apustua> a=u1.getApustuak();
 			
 			Mockito.doReturn(true).when(da).apustuaEzabatu(u1, a.get(0).getBetNumber());
 			

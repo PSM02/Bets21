@@ -31,7 +31,7 @@ public class ApustuaEzabatuDAWTest {
 			sut.open(false);
 			sut.storeUser(u1);
 			sut.apustuaEzabatu(u1, a.getBetNumber());
-			Vector<Apustua> aps = u1.getApustuak();
+			ArrayList<Apustua> aps = u1.getApustuak();
 			sut.close();
 			assertEquals(aps, null);
 		}catch(Exception e) {
@@ -48,7 +48,7 @@ public class ApustuaEzabatuDAWTest {
 		Registered u1 = new Registered("Manolo", "manolo");
 		Registered u2 = new Registered("Paqui", "paqui");
 		sut.apustuEgin(u1, 12, null, false, 0);
-		Vector<Apustua> aps = u1.getApustuak();
+		ArrayList<Apustua> aps = u1.getApustuak();
 		u1.addFollower(new Jarraitzailea(1, u2, u1, 5));
 		try {
 		sut.open(false);
@@ -57,7 +57,7 @@ public class ApustuaEzabatuDAWTest {
 		int ID = aps.get(0).getBetNumber();
 		sut.apustuaEzabatu(u1, ID);
 		sut.close();
-		Vector<Apustua> aps2 = u1.getApustuak();
+		ArrayList<Apustua> aps2 = u1.getApustuak();
 		assertEquals(aps2, null);
 		}catch(Exception e) {
 			assertTrue(false);
@@ -75,7 +75,7 @@ public class ApustuaEzabatuDAWTest {
 		try {
 			sut.open(false);
 			sut.apustuEgin(u1, 3, null, false, 0);
-			Vector<Apustua> a=u1.getApustuak();
+			ArrayList<Apustua> a=u1.getApustuak();
 			sut.apustuaEzabatu(u1, a.get(0).getBetNumber());
 			assertEquals(null, u1.getApustuak().get(0));
 			
