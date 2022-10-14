@@ -1,0 +1,62 @@
+
+…test.businessLogic.TestFacadeImplementation#addEventWithQuestion(Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;F)Ldomain/Event;b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java (#"1*è
+1b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java   (×
+Ô
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java   ($
+%0test.dataAccess.TestDataAccess"__id*B*@-
++test.businessLogic.TestFacadeImplementation"
+dbManagerTestËÈ
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java   (
+
+%1void"&test.dataAccess.TestDataAccess#open()V*&
+$
+%0test.dataAccess.TestDataAccess2open()×
+Ô
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java! !($
+%2test.dataAccess.TestDataAccess"__id*B*@-
++test.businessLogic.TestFacadeImplementation"
+dbManagerTest¾»
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java! !(<
+%3domain.Event"xtest.dataAccess.TestDataAccess#addEventWithQuestion(Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;F)Ldomain/Event;*&
+$
+%2test.dataAccess.TestDataAccess*
+
+descjava.lang.String*
+
+djava.util.Date*
+
+qjava.lang.String*
+""2KaddEventWithQuestion(Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;F)–
+“
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java! !(=
+odomain.Event"__id*
+
+%3domain.Event×
+Ô
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java" "($
+%4test.dataAccess.TestDataAccess"__id*B*@-
++test.businessLogic.TestFacadeImplementation"
+dbManagerTestÍÊ
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java" "(
+
+%5void"'test.dataAccess.TestDataAccess#close()V*&
+$
+%4test.dataAccess.TestDataAccess2close()"y
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java# #(
+
+odomain.Event:
+descjava.lang.String:
+djava.util.Date:
+qjava.lang.String:
+""B/-
++test.businessLogic.TestFacadeImplementation

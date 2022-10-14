@@ -1,0 +1,2 @@
+gui.AdminGUI#<init>(Ldomain/User;)V
+gui.AdminGUI#initialize()V

@@ -1,0 +1,14 @@
+gui.ApustuAnitzkoitzaGUI#instance-init#
+null
+java.util.Vector#<init>()V
+javax.swing.DefaultComboBoxModel#<init>()V
+javax.swing.JTable#<init>()V
+java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
+javax.swing.JScrollPane#instance-init#
+javax.swing.JScrollPane#<init>()V
+javax.swing.JLabel#<init>(Ljava/lang/String;)V
+java.util.Vector#instance-init#
+javax.swing.JLabel#instance-init#
+java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+javax.swing.DefaultComboBoxModel#instance-init#
+javax.swing.JTable#instance-init#

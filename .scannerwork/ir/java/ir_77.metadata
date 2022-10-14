@@ -1,0 +1,4 @@
+test.dataAccess.TestDataAccess#mezuaBidali(Ljava/lang/String;Ldomain/User;Ljava/lang/String;)V
+java.lang.String#equals(Ljava/lang/Object;)Z
+domain.Mezua#<init>(Ldomain/User;Ldomain/User;Ljava/lang/String;)V
+domain.Mezua#instance-init#

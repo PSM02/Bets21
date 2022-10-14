@@ -1,0 +1,7 @@
+organization=psm02
+projectKey=PSM02_Bets21
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.33148
+dashboardUrl=https://sonarcloud.io/dashboard?id=PSM02_Bets21
+ceTaskId=AYO9xRL68zhUOmrRmiMV
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYO9xRL68zhUOmrRmiMV

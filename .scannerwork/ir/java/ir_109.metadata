@@ -1,0 +1,2 @@
+domain.User#getMezuaErabiltzaile(Ljava/lang/String;)Ldomain/Mezua;
+java.lang.String#equals(Ljava/lang/Object;)Z

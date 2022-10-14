@@ -1,0 +1,8 @@
+dataAccess.DataAccess#boletoaGehitu(Ljava/lang/String;Ljava/lang/String;F)V
+domain.Boleto#<init>(Ljava/lang/String;FLdomain/Registered;)V
+java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
+java.lang.String#equals(Ljava/lang/Object;)Z
+java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+domain.Mugimendua#<init>(FLjava/lang/String;Ldomain/Registered;)V
+domain.Mugimendua#instance-init#
+domain.Boleto#instance-init#

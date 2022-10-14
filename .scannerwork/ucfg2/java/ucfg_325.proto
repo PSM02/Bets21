@@ -1,0 +1,175 @@
+
+(domain.Mezua#equals(Ljava/lang/Object;)ZC
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaB B("startingBlock*À
+2C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaK- K(4Ñ
+Å
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaK< K(A
+%11java.lang.String"__id**
+domain.Mezua"
+mezuaã
+à
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaKC K(N
+%12java.lang.String"__id*"* 
+
+otherdomain.Mezua"
+mezuaÊ
+„
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaK- K(O
+%13boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*"
+java.util.Objects*
+
+%11java.lang.String*
+
+%12java.lang.String*
+1*Î
+startingBlockC
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaB B("é
+ã
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaA A(
+
+%14"
+__annotate*
+java.lang.Override*
+
+objjava.lang.Objectw
+u
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaB B(!
+objjava.lang.Object"__annotation*
+
+%14*
+9
+10
+12*¥
+4C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaK K(}
+{
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaK K(
+%8domain.User"__id**
+domain.Mezua"
+User2Ö
+Ç
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaK K((
+%9domain.User"__id*"* 
+
+otherdomain.Mezua"
+User2⁄
+◊
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaK K()
+%10boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*"
+java.util.Objects*
+
+%8domain.User*
+
+%9domain.User*
+2
+1*∂
+6C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaJ1 J(8}
+{
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaJ@ J(E
+%5domain.User"__id**
+domain.Mezua"
+User1Ö
+Ç
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaJG J(R
+%6domain.User"__id*"* 
+
+otherdomain.Mezua"
+User1Ÿ
+÷
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaJ1 J(S
+%7boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*"
+java.util.Objects*
+
+%5domain.User*
+
+%6domain.User*	
+2
+4
+1*÷
+7C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaI I(
+}
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaI I(
+otherdomain.Mezua"__id*
+
+objjava.lang.ObjectÖ
+Ç
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaJ J(
+%2java.lang.Integer"__id**
+domain.Mezua"
+MezuIdå
+â
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaJ  J(,
+%3java.lang.Integer"__id*#*!
+
+otherdomain.Mezua"
+MezuIdÂ
+‚
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaJ	 J(-
+%4boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*"
+java.util.Objects*
+
+%2java.lang.Integer*
+
+%3java.lang.Integer*
+2
+4
+6
+1*ó
+8C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaH
+ H("M
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaH H(
+""*µ
+9C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaG G(´®
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaG G(
+%0java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*
+domain.Mezua2
+getClass()¥±
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaG G("
+%1java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*
+
+objjava.lang.Object2
+getClass()*
+7
+8*ò
+10C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaF
+ F("M
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaF F(
+""*ò
+12C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaD
+ D("M
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaD D(
+""*ó
+1C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaJ K(P"M
+C
+9C:/Users/marti/git/Bets21/src/main/java/domain/Mezua.javaJ K(P
+"":
+objjava.lang.ObjectB
+domain.Mezua

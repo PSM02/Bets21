@@ -1,0 +1,3 @@
+businessLogic.BLFacadeImplementation#addKuota(Ldomain/Question;FLjava/lang/String;)Z
+domain.Kuota#<init>(FLjava/lang/String;Ldomain/Question;)V
+domain.Kuota#instance-init#

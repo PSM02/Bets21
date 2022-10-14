@@ -1,0 +1,5 @@
+dataAccess.DataAccess#getEventsMonth(Ljava/util/Date;)Ljava/util/Vector;
+configuration.UtilDate#firstDayMonth(Ljava/util/Date;)Ljava/util/Date;
+java.util.Vector#<init>()V
+java.util.Vector#instance-init#
+configuration.UtilDate#lastDayMonth(Ljava/util/Date;)Ljava/util/Date;

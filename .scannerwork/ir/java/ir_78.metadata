@@ -1,0 +1,5 @@
+test.dataAccess.TestDataAccess#apustuaEzabatu(Ldomain/Registered;Ljava/lang/Integer;)V
+java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
+java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+domain.Mugimendua#<init>(FLjava/lang/String;Ldomain/Registered;)V
+domain.Mugimendua#instance-init#

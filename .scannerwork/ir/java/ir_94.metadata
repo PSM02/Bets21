@@ -1,0 +1,3 @@
+domain.Question#addKuota(FLjava/lang/String;)Ldomain/Kuota;
+domain.Kuota#<init>(FLjava/lang/String;Ldomain/Question;)V
+domain.Kuota#instance-init#

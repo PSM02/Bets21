@@ -1,0 +1,47 @@
+
+Htest.businessLogic.TestFacadeImplementation#removeEvent(Ldomain/Event;)Zb
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java ("1*’
+1b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java (×
+Ô
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java ($
+%0test.dataAccess.TestDataAccess"__id*B*@-
++test.businessLogic.TestFacadeImplementation"
+dbManagerTestËÈ
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java (
+
+%1void"&test.dataAccess.TestDataAccess#open()V*&
+$
+%0test.dataAccess.TestDataAccess2open()×
+Ô
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java ($
+%2test.dataAccess.TestDataAccess"__id*B*@-
++test.businessLogic.TestFacadeImplementation"
+dbManagerTestŽ‹
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java (*
+%3boolean";test.dataAccess.TestDataAccess#removeEvent(Ldomain/Event;)Z*&
+$
+%2test.dataAccess.TestDataAccess*
+
+evdomain.Event2removeEvent(Ldomain/Event;)×
+Ô
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java ($
+%4test.dataAccess.TestDataAccess"__id*B*@-
++test.businessLogic.TestFacadeImplementation"
+dbManagerTestÍÊ
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java (
+
+%5void"'test.dataAccess.TestDataAccess#close()V*&
+$
+%4test.dataAccess.TestDataAccess2close()"l
+b
+XC:/Users/marti/git/Bets21/src/test/java/test/businessLogic/TestFacadeImplementation.java (
+"":
+evdomain.EventB/-
++test.businessLogic.TestFacadeImplementation

@@ -1,0 +1,41 @@
+
+;test.dataAccess.TestDataAccess#removeEvent(Ldomain/Event;)ZU
+KC:/Users/marti/git/Bets21/src/test/java/test/dataAccess/TestDataAccess.javaB B("3*»
+2U
+KC:/Users/marti/git/Bets21/src/test/java/test/dataAccess/TestDataAccess.javaF F("_
+U
+KC:/Users/marti/git/Bets21/src/test/java/test/dataAccess/TestDataAccess.javaI I(
+""*­
+3U
+KC:/Users/marti/git/Bets21/src/test/java/test/dataAccess/TestDataAccess.javaC C(ƒ
+€
+U
+KC:/Users/marti/git/Bets21/src/test/java/test/dataAccess/TestDataAccess.javaC C(
+%0java.io.PrintStream"__id*
+""öó
+U
+KC:/Users/marti/git/Bets21/src/test/java/test/dataAccess/TestDataAccess.javaC C(6
+
+%1void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%0java.io.PrintStream*" 
+>> DataAccessTest: removeEvent2println(Ljava/lang/String;)ÍÊ
+U
+KC:/Users/marti/git/Bets21/src/test/java/test/dataAccess/TestDataAccess.javaD! D(4
+%2java.lang.Integer"0domain.Event#getEventNumber()Ljava/lang/Integer;*
+
+evdomain.Event2getEventNumber()z
+x
+U
+KC:/Users/marti/git/Bets21/src/test/java/test/dataAccess/TestDataAccess.javaD D(6
+edomain.Event"__id*
+""*
+2
+1*»
+1U
+KC:/Users/marti/git/Bets21/src/test/java/test/dataAccess/TestDataAccess.javaK	 K("_
+U
+KC:/Users/marti/git/Bets21/src/test/java/test/dataAccess/TestDataAccess.javaK K(
+"":
+evdomain.EventB" 
+test.dataAccess.TestDataAccess

@@ -1,0 +1,538 @@
+
+GertaeraEzabatuDAWTest#test3()VM
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaf f("53*“
+46M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javao o(,Å
+
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javao o(,
+k3domain.Kuota"__id*
+
+%8domain.KuotaÚÔ
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javap p(+
+%9domain.Kuota";domain.Question#addKuota(FLjava/lang/String;)Ldomain/Kuota;*
+
+q2domain.Question*2*
+probaKuota42addKuota(FLjava/lang/String;)*
+45*“
+47M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javan n(,Å
+
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javan n(,
+k2domain.Kuota"__id*
+
+%7domain.KuotaÚÔ
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javao o(+
+%8domain.Kuota";domain.Question#addKuota(FLjava/lang/String;)Ldomain/Kuota;*
+
+q2domain.Question*2*
+probaKuota32addKuota(FLjava/lang/String;)*
+46*∆
+25O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÅ7 Å(;‡›
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÅ7 Å(H
+%25boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+feesjava.util.List*
+
+k2domain.Kuota2contains(Ljava/lang/Object;)*
+19
+21
+23*“
+48M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javam m(,Å
+
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javam m(,
+k1domain.Kuota"__id*
+
+%6domain.KuotaÚÔ
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javan n(+
+%7domain.Kuota";domain.Question#addKuota(FLjava/lang/String;)Ldomain/Kuota;*
+
+q1domain.Question*2*
+probaKuota22addKuota(FLjava/lang/String;)*
+47*Ÿ
+49M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javal l(3à
+Ö
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javal l(3
+q2domain.Question"__id*
+
+%5domain.QuestionÚÔ
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javam m(+
+%6domain.Kuota";domain.Question#addKuota(FLjava/lang/String;)Ldomain/Kuota;*
+
+q1domain.Question*2*
+probaKuota12addKuota(FLjava/lang/String;)*
+48* 
+27O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÅ" Å(&‡›
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÅ" Å(3
+%24boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+feesjava.util.List*
+
+k1domain.Kuota2contains(Ljava/lang/Object;)*
+25
+19
+21
+23*÷
+29O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÅ Å(ËÂ
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÅ Å(
+%23boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+	questionsjava.util.List*
+
+q2domain.Question2contains(Ljava/lang/Object;)*
+25
+27
+19
+21
+23*‡
+50M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javak k(3à
+Ö
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javak k(3
+q1domain.Question"__id*
+
+%4domain.Question˘ˆ
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javal l(2
+%5domain.Question">domain.Event#addQuestion(Ljava/lang/String;F)Ldomain/Question;*
+
+edomain.Event*
+probaGaldera2*22 addQuestion(Ljava/lang/String;F)*
+49*ÿ
+51M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaj j(/Ä
+~
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaj j(/
+edomain.Event"__id*
+
+%2domain.Event˘ˆ
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javak k(2
+%4domain.Question">domain.Event#addQuestion(Ljava/lang/String;F)Ldomain/Question;*
+
+edomain.Event*
+probaGaldera1*22 addQuestion(Ljava/lang/String;F)*
+50*√
+52M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javai i(Ö
+Ç
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javai i(
+djava.util.Date"__id*
+
+%0java.util.Datesq
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaj j(
+%2domain.Event"domain.EventÍ
+Á
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaj j(.
+%3"Kdomain.Event#<init>(Ljava/lang/Integer;Ljava/lang/String;Ljava/util/Date;)V*
+
+%2domain.Event*2d*
+probaEventua*
+
+djava.util.Date*
+51*ﬂ
+53M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javai i(wu
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javai i(
+%0java.util.Date"java.util.Dateä
+á
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javai i(
+%1"java.util.Date#<init>()V*
+
+%0java.util.Date*
+52*⁄
+31O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÄ$ Ä(-ËÂ
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÄ$ Ä(:
+%22boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+	questionsjava.util.List*
+
+q1domain.Question2contains(Ljava/lang/Object;)*
+25
+27
+29
+19
+21
+23*—
+11O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaå å(ËÂ
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaå å(
+%38boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+	questionsjava.util.List*
+
+q2domain.Question2contains(Ljava/lang/Object;)*
+3
+5
+7
+9
+0*·
+33M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java ('â
+Ü
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java ('
+feesjava.util.List"__id*
+
+%20java.util.List·ﬁ
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÄ Ä( 
+%21boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+eventsjava.util.List*
+
+edomain.Event2contains(Ljava/lang/Object;)*
+25
+27
+29
+19
+31
+21
+23*÷
+34M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java~ ~(4é
+ã
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java~ ~(4
+	questionsjava.util.List"__id*
+
+%18java.util.Listõ
+ò
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java (
+%19dataAccess.DataAccess"__id*#*!
+GertaeraEzabatuDAWTest"
+sutÀ»
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java (&
+%20java.util.List"2dataAccess.DataAccess#getAllFees()Ljava/util/List;*
+
+%19dataAccess.DataAccess2getAllFees()*
+33*ﬂ
+35M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java} }()ç
+ä
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java} }()
+eventsjava.util.List"__id*
+
+%16java.util.Vectorõ
+ò
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java~ ~(!
+%17dataAccess.DataAccess"__id*#*!
+GertaeraEzabatuDAWTest"
+sut’“
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java~ ~(3
+%18java.util.List"7dataAccess.DataAccess#getAllQuestions()Ljava/util/List;*
+
+%17dataAccess.DataAccess2getAllQuestions()*
+34*’
+13O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaã% ã(.ËÂ
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaã% ã(;
+%37boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+	questionsjava.util.List*
+
+q1domain.Question2contains(Ljava/lang/Object;)*
+3
+5
+7
+9
+11
+0*˛
+36M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java} }(õ
+ò
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java} }(
+%15dataAccess.DataAccess"__id*#*!
+GertaeraEzabatuDAWTest"
+sutÑÅ
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.java} }((
+%16java.util.Vector"CdataAccess.DataAccess#getEvents(Ljava/util/Date;)Ljava/util/Vector;*
+
+%15dataAccess.DataAccess*
+
+djava.util.Date2getEvents(Ljava/util/Date;)*
+35*Ÿ
+37M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaz z(õ
+ò
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaz z(
+%13dataAccess.DataAccess"__id*#*!
+GertaeraEzabatuDAWTest"
+sutﬂ‹
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaz z(
+%14void"/dataAccess.DataAccess#addEvent(Ldomain/Event;)V*
+
+%13dataAccess.DataAccess*
+
+edomain.Event2addEvent(Ldomain/Event;)*
+36*‡
+15O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaä ä(ã
+à
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaä ä(
+feesjava.util.List"__id*
+
+%35java.util.List·ﬁ
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaã ã(!
+%36boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+eventsjava.util.List*
+
+edomain.Event2contains(Ljava/lang/Object;)*
+13
+3
+5
+7
+9
+11
+0*Ó
+38M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javas s(u
+s
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javas s(
+qdomain.Question"__id*
+""ó
+î
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javas s(
+qdomain.Question"
+__arrayGet*
+
+%10java.util.Vector*
+""*
+37
+43*ﬁ
+16O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaâ â($ê
+ç
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaâ â($
+	questionsjava.util.List"__id*
+
+%33java.util.Listù
+ö
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaä
+ ä(
+%34dataAccess.DataAccess"__id*#*!
+GertaeraEzabatuDAWTest"
+sutÕ 
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaä
+ ä(
+%35java.util.List"2dataAccess.DataAccess#getAllFees()Ljava/util/List;*
+
+%34dataAccess.DataAccess2getAllFees()*
+15*Ë
+39M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javat t(r
+p
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javat t(
+kdomain.Kuota"__id*
+""î
+ë
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javat t(
+kdomain.Kuota"
+__arrayGet*
+
+%11java.util.Vector*
+""*
+38
+42*Á
+17O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaà à(è
+å
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaà à(
+eventsjava.util.List"__id*
+
+%31java.util.Vectorù
+ö
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaâ â(
+%32dataAccess.DataAccess"__id*#*!
+GertaeraEzabatuDAWTest"
+sut◊‘
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaâ â($
+%33java.util.List"7dataAccess.DataAccess#getAllQuestions()Ljava/util/List;*
+
+%32dataAccess.DataAccess2getAllQuestions()*
+16*Ñ
+18O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaà à(ù
+ö
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaà à(
+%30dataAccess.DataAccess"__id*#*!
+GertaeraEzabatuDAWTest"
+sutÜÉ
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaà à(
+%31java.util.Vector"CdataAccess.DataAccess#getEvents(Ljava/util/Date;)Ljava/util/Vector;*
+
+%30dataAccess.DataAccess*
+
+djava.util.Date2getEvents(Ljava/util/Date;)*
+17*Ì
+19O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÖ Ö(ù
+ö
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÖ Ö(
+%28dataAccess.DataAccess"__id*#*!
+GertaeraEzabatuDAWTest"
+sutÔÏ
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÖ Ö(
+%29void"6dataAccess.DataAccess#gertaeraEzabatu(Ldomain/Event;)V*
+
+%28dataAccess.DataAccess*
+
+edomain.Event2gertaeraEzabatu(Ldomain/Event;)*
+18*m
+0 "f
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaì ì(
+implicit return*º
+3O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaç2 ç(6‡›
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaç2 ç(C
+%42boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+feesjava.util.List*
+
+k4domain.Kuota2contains(Ljava/lang/Object;)*
+0*ø
+5O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaç ç(!‡›
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaç ç(.
+%41boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+feesjava.util.List*
+
+k3domain.Kuota2contains(Ljava/lang/Object;)*
+3
+0*¬
+7O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaç ç(‡›
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaç ç(
+%40boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+feesjava.util.List*
+
+k2domain.Kuota2contains(Ljava/lang/Object;)*	
+3
+5
+0*≈
+9O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaå" å(&‡›
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaå" å(3
+%39boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+feesjava.util.List*
+
+k1domain.Kuota2contains(Ljava/lang/Object;)*
+3
+5
+7
+0*á
+42M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javau u(´®
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javau u(
+%12",domain.Kuota#getApustuak()Ljava/util/Vector;*
+
+kdomain.Kuota2getApustuak()*
+39*ó
+43M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javat t(ª∏
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javat t(
+%11java.util.Vector"+domain.Question#getFees()Ljava/util/Vector;*
+
+qdomain.Question2	getFees()*
+39*æ
+21O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÇ Ç(!‡›
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÇ Ç(.
+%27boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+feesjava.util.List*
+
+k4domain.Kuota2contains(Ljava/lang/Object;)*
+19*õ
+44M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javas s(øº
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javas s(#
+%10java.util.Vector"-domain.Event#getQuestions()Ljava/util/Vector;*
+
+edomain.Event2getQuestions()*
+38*›
+45M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javap p(,Å
+
+M
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javap p(,
+k4domain.Kuota"__id*
+
+%9domain.Kuota*
+44*¬
+23O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÇ Ç(‡›
+O
+CC:/Users/marti/git/Bets21/src/test/java/GertaeraEzabatuDAWTest.javaÇ Ç(
+%26boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+feesjava.util.List*
+
+k3domain.Kuota2contains(Ljava/lang/Object;)*
+19
+21B
+GertaeraEzabatuDAWTest

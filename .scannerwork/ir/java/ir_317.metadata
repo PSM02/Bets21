@@ -1,0 +1,12 @@
+gui.MugimenduakIkusiGUI#<init>(LRegistered;)V
+javax.swing.border.EmptyBorder#<init>(IIII)V
+javax.swing.JTextPane#instance-init#
+javax.swing.JLabel#<init>(Ljava/lang/String;)V
+java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
+gui.MainGUI#getBusinessLogic()LBLFacade;
+javax.swing.JPanel#<init>()V
+javax.swing.JLabel#instance-init#
+java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+javax.swing.border.EmptyBorder#instance-init#
+javax.swing.JTextPane#<init>()V
+javax.swing.JPanel#instance-init#

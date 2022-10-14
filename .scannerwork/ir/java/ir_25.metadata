@@ -1,0 +1,3 @@
+dataAccess.DataAccess#jarraitu(Ldomain/Registered;Ljava/lang/String;F)V
+domain.Jarraitzailea#<init>(Ldomain/Registered;Ldomain/Registered;F)V
+domain.Jarraitzailea#instance-init#

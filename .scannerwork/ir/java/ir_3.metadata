@@ -1,0 +1,5 @@
+dataAccess.DataAccess#createQuestion(Ldomain/Event;Ljava/lang/String;F)Ldomain/Question;
+java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
+exceptions.QuestionAlreadyExist#<init>(Ljava/lang/String;)V
+java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+exceptions.QuestionAlreadyExist#instance-init#
