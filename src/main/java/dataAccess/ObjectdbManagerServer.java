@@ -80,7 +80,7 @@ public class ObjectdbManagerServer extends JDialog {
 							    	Runtime.getRuntime().exec("java -cp "+objectDbpath+" com.objectdb.Server -port "+ c.getDatabasePort()+" stop");
 							    	
 							    } catch (Exception ioe) {
-							    	System.out.println (ioe);
+							    	//System.out.println (ioe);
 							    }
 
 								System.exit(1);
@@ -114,7 +114,7 @@ public class ObjectdbManagerServer extends JDialog {
 			try {
 		    	Runtime.getRuntime().exec("java -cp "+objectDbpath+" com.objectdb.Server -port "+ c.getDatabasePort()+" start");
 		    } catch (Exception ioe) {
-		    	System.out.println (ioe);
+		    	//System.out.println (ioe);
 		    }
 
 		    textArea.append("\nAccess granted to: "+c.getUser());

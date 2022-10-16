@@ -31,6 +31,7 @@ public class ApustuaEzabatuDAWTest {
 			sut.open(false);
 			sut.storeUser(u1);
 			sut.apustuaEzabatu(u1, a.getBetNumber());
+			u1 = (Registered) sut.getUser("Manolo");
 			ArrayList<Apustua> aps = u1.getApustuak();
 			sut.close();
 			assertEquals(aps, null);

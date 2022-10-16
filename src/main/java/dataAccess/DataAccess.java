@@ -379,33 +379,50 @@ public class DataAccess {
 	public boolean apustuEgin(Registered user, float dirua, List<String> kuotak, boolean kopiatuta, int boleto) {
 		Registered r = (Registered) db.find(User.class, user);
 		Boleto b = null;
-		if (!kopiatuta || boleto != 0) {
-			b = db.find(Boleto.class, boleto);
-		}
-		Apustua apustua = null;
+		b = boletoBaliozko(kopiatuta, boleto, b);
 		if (r.getDirua() - dirua >= 0) {
 			Vector<Kuota> kl = new Vector<Kuota>();
-			for (String str : kuotak) {
-				Kuota k = db.find(Kuota.class, str);
-				kl.add(k);
-			}
+			getKuotakAndAdd(kuotak, kl);
 			db.getTransaction().begin();
-			apustua = new Apustua(dirua, user, kl, kopiatuta, b);
-			Mugimendua m = new Mugimendua(dirua, ResourceBundle.getBundle("Etiquetas").getString("HaveStaked"), user);
-			r.setDirua(r.getDirua() - dirua);
-			r.addApustua(apustua);
-			r.addMugimendua(m);
-			r.getBoletoak().remove(b);
-			for (Kuota k : kl) {
-				k.addApustua(apustua);
-			}
+			apustua(user, dirua, kopiatuta, r, b, kl);
 			db.getTransaction().commit();
-			for (Jarraitzailea f : r.getFollowers()) {
-				apustuEgin(f.getJarraitzailea(), dirua * f.getMurriztapena(), kuotak, true, 0);
-			}
+			doApustuaForFollowers(dirua, kuotak, r);
 			return true;
 		} else
 			return false;
+	}
+
+	private void doApustuaForFollowers(float dirua, List<String> kuotak, Registered r) {
+		for (Jarraitzailea f : r.getFollowers()) {
+			apustuEgin(f.getJarraitzailea(), dirua * f.getMurriztapena(), kuotak, true, 0);
+		}
+	}
+
+	private void apustua(Registered user, float dirua, boolean kopiatuta, Registered r, Boleto b, Vector<Kuota> kl) {
+		Apustua apustua;
+		apustua = new Apustua(dirua, user, kl, kopiatuta, b);
+		Mugimendua m = new Mugimendua(dirua, ResourceBundle.getBundle("Etiquetas").getString("HaveStaked"), user);
+		r.setDirua(r.getDirua() - dirua);
+		r.addApustua(apustua);
+		r.addMugimendua(m);
+		r.getBoletoak().remove(b);
+		for (Kuota k : kl) {
+			k.addApustua(apustua);
+		}
+	}
+
+	private void getKuotakAndAdd(List<String> kuotak, Vector<Kuota> kl) {
+		for (String str : kuotak) {
+			Kuota k = db.find(Kuota.class, str);
+			kl.add(k);
+		}
+	}
+
+	private Boleto boletoBaliozko(boolean kopiatuta, int boleto, Boleto b) {
+		if (!kopiatuta || boleto != 0) {
+			b = db.find(Boleto.class, boleto);
+		}
+		return b;
 	}
 
 	public void apustuaEzabatu(Registered u, Integer apustuaID) {

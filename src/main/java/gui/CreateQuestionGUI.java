@@ -212,7 +212,7 @@ public static void paintDaysWithEvents(JCalendar jCalendar,Vector<Date> datesWit
 	 	for (Date d:datesWithEventsCurrentMonth){
 
 	 		calendar.setTime(d);
-	 		System.out.println(d);
+	 		//System.out.println(d);
 	 		
 
 			

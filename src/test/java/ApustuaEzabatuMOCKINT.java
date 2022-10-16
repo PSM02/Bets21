@@ -42,6 +42,7 @@ class ApustuaEzabatuMOCKINT {
 	}
 	}
 	
+	@Test
 	public void test2() {//Erabiltzailea ez dago datubasean
 		
 		Registered u1 = new Registered("Ibon", "Ibonaldo");
@@ -58,6 +59,7 @@ class ApustuaEzabatuMOCKINT {
 		}
 	}
 	
+	@Test
 	public void test3() { //Apustua eta erabiltzailea datubasean
 		Registered u1 = new Registered("Markel", "mossi");
 		try {
