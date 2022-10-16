@@ -5,6 +5,7 @@ import java.util.Vector;
 
 import org.junit.Test;
 
+import dataAccess.ApustuEginParameter;
 import dataAccess.DataAccess;
 import domain.Apustua;
 import domain.Registered;
@@ -41,7 +42,7 @@ public class ApustuaEzabatuDABTest {
 		Registered u1 = new Registered("Ibon", "Ibonaldo");
 		try {
 			sut.open(false);
-			sut.apustuEgin(u1, 3, null, false, 0);
+			sut.apustuEgin(new ApustuEginParameter(u1, 3, null, false, 0));
 			sut.apustuaEzabatu(u1, 3124);
 			
 		}catch(Exception e) {
@@ -58,7 +59,7 @@ public class ApustuaEzabatuDABTest {
 		Registered u1 = new Registered("Markel", "mossi");
 		try {
 			sut.open(false);
-			sut.apustuEgin(u1, 3, null, false, 0);
+			sut.apustuEgin(new ApustuEginParameter(u1, 3, null, false, 0));
 			ArrayList<Apustua> a=u1.getApustuak();
 			sut.apustuaEzabatu(u1, a.get(0).getBetNumber());
 			assertEquals(null, u1.getApustuak().get(0));

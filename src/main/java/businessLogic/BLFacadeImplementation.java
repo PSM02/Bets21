@@ -11,6 +11,7 @@ import javax.jws.WebService;
 import javax.persistence.TypedQuery;
 
 import configuration.ConfigXML;
+import dataAccess.ApustuEginParameter;
 import dataAccess.DataAccess;
 import domain.Question;
 import domain.Registered;
@@ -34,8 +35,9 @@ public class BLFacadeImplementation  implements BLFacade {
 		System.out.println("Creating BLFacadeImplementation instance");
 		ConfigXML c=ConfigXML.getInstance();
 		
-		if (c.getDataBaseOpenMode().equals("initialize")) {
-		    dbManager=new DataAccess(c.getDataBaseOpenMode().equals("initialize"));
+		String initialize = "initialize";
+		if (c.getDataBaseOpenMode().equals(initialize)) {
+		    dbManager=new DataAccess(c.getDataBaseOpenMode().equals(initialize));
 		    dbManager.initializeDB();
 		    } else
 		     dbManager=new DataAccess();
@@ -190,7 +192,7 @@ public class BLFacadeImplementation  implements BLFacade {
     
     public boolean apustuEgin(Registered user, float dirua, Vector<String> kuotak, boolean kopiatuta, int b) {
         dbManager.open(false);
-        boolean ema = dbManager.apustuEgin(user, dirua, kuotak, kopiatuta, b);
+        boolean ema = dbManager.apustuEgin(new ApustuEginParameter(user, dirua, kuotak, kopiatuta, b));
         dbManager.close();
         return ema;
     }

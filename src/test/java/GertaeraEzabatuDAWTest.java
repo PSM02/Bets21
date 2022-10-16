@@ -7,6 +7,7 @@ import java.util.Vector;
 
 import org.junit.Test;
 
+import dataAccess.ApustuEginParameter;
 import dataAccess.DataAccess;
 import domain.Apustua;
 import domain.Event;
@@ -39,10 +40,10 @@ public class GertaeraEzabatuDAWTest {
 			sut.addMoney(10000, u1);
 			Vector<String> kuotak=new Vector<String>();
 			kuotak.add(k1.getDeskripzioa());
-			sut.apustuEgin(u1, 10, kuotak, false, 0);
+			sut.apustuEgin(new ApustuEginParameter(u1, 10, kuotak, false, 0));
 			kuotak.removeAllElements();
 			kuotak.add(k2.getDeskripzioa());
-			sut.apustuEgin(u1, 10, kuotak, false, 0);
+			sut.apustuEgin(new ApustuEginParameter(u1, 10, kuotak, false, 0));
 			
 			
 			//begiratu esperotakoa datubasean dagoela

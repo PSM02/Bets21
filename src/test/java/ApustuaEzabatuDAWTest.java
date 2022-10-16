@@ -6,6 +6,7 @@ import java.util.Vector;
 
 import org.junit.Test;
 
+import dataAccess.ApustuEginParameter;
 import dataAccess.DataAccess;
 import domain.Apustua;
 import domain.Boleto;
@@ -48,7 +49,7 @@ public class ApustuaEzabatuDAWTest {
 	public void test2() {
 		Registered u1 = new Registered("Manolo", "manolo");
 		Registered u2 = new Registered("Paqui", "paqui");
-		sut.apustuEgin(u1, 12, null, false, 0);
+		sut.apustuEgin(new ApustuEginParameter(u1, 12, null, false, 0));
 		ArrayList<Apustua> aps = u1.getApustuak();
 		u1.addFollower(new Jarraitzailea(1, u2, u1, 5));
 		try {
@@ -75,7 +76,7 @@ public class ApustuaEzabatuDAWTest {
 		Registered u1 = new Registered("Markel", "mossi");
 		try {
 			sut.open(false);
-			sut.apustuEgin(u1, 3, null, false, 0);
+			sut.apustuEgin(new ApustuEginParameter(u1, 3, null, false, 0));
 			ArrayList<Apustua> a=u1.getApustuak();
 			sut.apustuaEzabatu(u1, a.get(0).getBetNumber());
 			assertEquals(null, u1.getApustuak().get(0));

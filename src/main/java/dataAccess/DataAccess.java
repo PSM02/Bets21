@@ -376,17 +376,17 @@ public class DataAccess {
 		return str;
 	}
 
-	public boolean apustuEgin(Registered user, float dirua, List<String> kuotak, boolean kopiatuta, int boleto) {
-		Registered r = (Registered) db.find(User.class, user);
+	public boolean apustuEgin(ApustuEginParameter parameterObject) {
+		Registered r = (Registered) db.find(User.class, parameterObject.user);
 		Boleto b = null;
-		b = boletoBaliozko(kopiatuta, boleto, b);
-		if (r.getDirua() - dirua >= 0) {
+		b = boletoBaliozko(parameterObject.kopiatuta, parameterObject.boleto, b);
+		if (r.getDirua() - parameterObject.dirua >= 0) {
 			Vector<Kuota> kl = new Vector<Kuota>();
-			getKuotakAndAdd(kuotak, kl);
+			getKuotakAndAdd(parameterObject.kuotak, kl);
 			db.getTransaction().begin();
-			apustua(user, dirua, kopiatuta, r, b, kl);
+			apustua(parameterObject.user, parameterObject.dirua, parameterObject.kopiatuta, r, b, kl);
 			db.getTransaction().commit();
-			doApustuaForFollowers(dirua, kuotak, r);
+			doApustuaForFollowers(parameterObject.dirua, parameterObject.kuotak, r);
 			return true;
 		} else
 			return false;
@@ -394,7 +394,7 @@ public class DataAccess {
 
 	private void doApustuaForFollowers(float dirua, List<String> kuotak, Registered r) {
 		for (Jarraitzailea f : r.getFollowers()) {
-			apustuEgin(f.getJarraitzailea(), dirua * f.getMurriztapena(), kuotak, true, 0);
+			apustuEgin(new ApustuEginParameter(f.getJarraitzailea(), dirua * f.getMurriztapena(), kuotak, true, 0));
 		}
 	}
 
