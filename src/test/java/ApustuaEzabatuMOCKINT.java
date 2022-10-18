@@ -7,6 +7,7 @@ import java.util.Vector;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.ArgumentCaptor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -15,10 +16,13 @@ import org.mockito.runners.MockitoJUnitRunner;
 import businessLogic.BLFacadeImplementation;
 import dataAccess.DataAccess;
 import domain.Apustua;
+import domain.Kuota;
+import domain.Question;
 import domain.Registered;
+import domain.User;
 
 @RunWith(MockitoJUnitRunner.class)
-class ApustuaEzabatuMOCKINT {
+public class ApustuaEzabatuMOCKINT {
 	
 	@Mock
 	DataAccess da;
@@ -62,16 +66,20 @@ class ApustuaEzabatuMOCKINT {
 	@Test
 	public void test3() { //Apustua eta erabiltzailea datubasean
 		Registered u1 = new Registered("Markel", "mossi");
+		Kuota k = new Kuota(2, "prueba", null);
+		Apustua a = new Apustua(13, u1, k, false, null);
+		u1.addApustua(a);
 		try {
-			sut.register("Markel", "mossi");
-			sut.apustuEgin(u1, 3, null, false, 0);
-			ArrayList<Apustua> a=u1.getApustuak();
 			
-			Mockito.doReturn(true).when(da).apustuaEzabatu(u1, a.get(0).getBetNumber());
+			ArgumentCaptor<Registered> user1Cap = ArgumentCaptor.forClass(Registered.class);
+			ArgumentCaptor<Integer> ApustuaCap = ArgumentCaptor.forClass(Integer.class);
 			
-			sut.apustuaEzabatu(u1, a.get(0).getBetNumber());
+			sut.apustuaEzabatu(u1, a.getBetNumber());
 			
-			assertTrue(true);
+			Mockito.verify(da,Mockito.times(1)).apustuaEzabatu(user1Cap.capture(), ApustuaCap.capture());
+			
+			assertEquals(user1Cap.getValue(), u1);
+			assertEquals(ApustuaCap.getValue(), a);
 		}catch(Exception e) {
 			assertTrue(false);
 		}

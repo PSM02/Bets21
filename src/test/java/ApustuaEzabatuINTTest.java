@@ -12,7 +12,7 @@ import businessLogic.BLFacadeImplementation;
 import domain.Apustua;
 import domain.Registered;
 
-class ApustuaEzabatuINTTest {
+public class ApustuaEzabatuINTTest {
 
 	static BLFacadeImplementation sut;
 
@@ -43,6 +43,7 @@ class ApustuaEzabatuINTTest {
 		
 		Registered u1 = new Registered("Ibon", "Ibonaldo");
 		try {
+			sut.storeUser(u1);
 			sut.apustuEgin(u1, 3, null, false, 0);
 			sut.apustuaEzabatu(u1, 3124);
 			
