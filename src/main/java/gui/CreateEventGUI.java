@@ -134,7 +134,9 @@ public class CreateEventGUI extends JFrame {
 				String desk = textField.getText();
 				boolean ondoEginda = facade.addEvent(desk, date);
 				if(ondoEginda) {
-					lblNewLabel.setText(ResourceBundle.getBundle("Etiquetas").getString("wellkept"));
+					//lblNewLabel.setText(ResourceBundle.getBundle("Etiquetas").getString("wellkept"));
+					lblNewLabel.setText("ondo");
+
 				} else {
 					lblNewLabel.setText(ResourceBundle.getBundle("Etiquetas").getString("alreadyexists"));
 				}

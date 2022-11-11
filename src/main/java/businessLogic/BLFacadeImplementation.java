@@ -16,6 +16,7 @@ import dataAccess.DataAccess;
 import domain.Question;
 import domain.Registered;
 import domain.User;
+import domain.extendedIterator;
 import domain.Apustua;
 import domain.Boleto;
 import domain.Event;
@@ -97,9 +98,9 @@ public class BLFacadeImplementation  implements BLFacade {
 	 * @return collection of events
 	 */
     @WebMethod	
-	public ArrayList<Event> getEvents(Date date)  {
+	public extendedIterator<Event> getEvents(Date date)  {
 		dbManager.open(false);
-		ArrayList<Event>  events=dbManager.getEvents(date);
+		extendedIterator<Event> events=dbManager.getEvents(date);
 		dbManager.close();
 		return events;
 	}

@@ -23,6 +23,7 @@ import domain.Apustua;
 import domain.Boleto;
 import domain.Event;
 import domain.Existitu_adminDa;
+import domain.ExtendedIteratorEvents;
 import domain.Jarraitzailea;
 import domain.Kuota;
 import domain.Mezua;
@@ -30,6 +31,7 @@ import domain.Mugimendua;
 import domain.Question;
 import domain.Registered;
 import domain.User;
+import domain.extendedIterator;
 import exceptions.QuestionAlreadyExist;
 
 /**
@@ -216,7 +218,7 @@ public class DataAccess {
 	 * @param date in which events are retrieved
 	 * @return collection of events
 	 */
-	public ArrayList<Event> getEvents(Date date) {
+	public extendedIterator<Event> getEvents(Date date) {
 		System.out.println(">> DataAccess: getEvents");
 		ArrayList<Event> res = new ArrayList<Event>();
 		TypedQuery<Event> query = db.createQuery("SELECT ev FROM Event ev WHERE ev.eventDate=?1", Event.class);
@@ -226,7 +228,8 @@ public class DataAccess {
 			System.out.println(ev.toString());
 			res.add(ev);
 		}
-		return res;
+		
+		return new ExtendedIteratorEvents(res);
 	}
 
 	/**

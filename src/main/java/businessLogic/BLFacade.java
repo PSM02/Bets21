@@ -12,6 +12,7 @@ import domain.Event;
 import domain.Question;
 import domain.Registered;
 import domain.User;
+import domain.extendedIterator;
 import exceptions.EventFinished;
 import exceptions.QuestionAlreadyExist;
 
@@ -41,7 +42,7 @@ public interface BLFacade  {
 	 * @param date in which events are retrieved
 	 * @return collection of events
 	 */
-	@WebMethod public ArrayList<Event> getEvents(Date date);
+	@WebMethod public extendedIterator<Event> getEvents(Date date);
 	
 	/**
 	 * This method retrieves from the database the dates a month for which there are events

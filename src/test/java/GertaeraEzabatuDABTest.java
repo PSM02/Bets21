@@ -14,6 +14,7 @@ import domain.Event;
 import domain.Kuota;
 import domain.Question;
 import domain.Registered;
+import domain.extendedIterator;
 
 public class GertaeraEzabatuDABTest {
 
@@ -94,7 +95,7 @@ public class GertaeraEzabatuDABTest {
 			sut.addEvent(e);
 			
 			//begiratu esperotakoa datubasean dagoela
-			List<Event> events = sut.getEvents(d);
+			extendedIterator<Event> events = sut.getEvents(d);
 			List<Question> questions = sut.getAllQuestions();
 			assertTrue(events.contains(e) && questions.contains(q1) && questions.contains(q2) && questions.contains(q3));
 
@@ -137,7 +138,7 @@ public class GertaeraEzabatuDABTest {
 			sut.addEvent(e);
 			
 			//begiratu esperotakoa datubasean dagoela
-			List<Event> events = sut.getEvents(d);
+			extendedIterator<Event> events = sut.getEvents(d);
 			List<Question> questions = sut.getAllQuestions();
 			List<Kuota> fees = sut.getAllFees();
 			assertTrue(events.contains(e) && questions.contains(q1) 
@@ -188,7 +189,7 @@ public class GertaeraEzabatuDABTest {
 			
 			
 			//begiratu esperotakoa datubasean dagoela
-			List<Event> events = sut.getEvents(d);
+			extendedIterator<Event> events = sut.getEvents(d);
 			List<Question> questions = sut.getAllQuestions();
 			List<Kuota> fees = sut.getAllFees();
 			List<Apustua> bets = sut.getAllBets();

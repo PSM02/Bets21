@@ -8,6 +8,7 @@ import com.toedter.calendar.JCalendar;
 import domain.Kuota;
 import domain.Question;
 import domain.Registered;
+import domain.extendedIterator;
 
 import javax.swing.*;
 import java.awt.*;
@@ -156,11 +157,12 @@ public class EmaitzakIpiniGUI extends JFrame {
 
 						BLFacade facade=MainGUI.getBusinessLogic();
 
-						ArrayList<domain.Event> events=facade.getEvents(firstDay);
+						extendedIterator<domain.Event> events=facade.getEvents(firstDay);
 
 						if (events.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("NoEvents")+ ": "+dateformat1.format(calendarAct.getTime()));
 						else jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("Events")+ ": "+dateformat1.format(calendarAct.getTime()));
-						for (domain.Event ev:events){
+						while (events.hasNext()){
+							domain.Event ev = events.next();
 							Vector<Object> row = new Vector<Object>();
 
 							System.out.println("Events "+ev);

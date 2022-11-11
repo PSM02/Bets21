@@ -15,6 +15,7 @@ import java.beans.PropertyChangeListener;
 import businessLogic.BLFacade;
 import configuration.UtilDate;
 import domain.Event;
+import domain.extendedIterator;
 import exceptions.EventFinished;
 import exceptions.QuestionAlreadyExist;
 
@@ -159,7 +160,7 @@ public class CreateQuestionGUI extends JFrame {
 					try {
 						BLFacade facade = MainGUI.getBusinessLogic();
 
-						ArrayList<domain.Event> events = facade.getEvents(firstDay);
+						extendedIterator<domain.Event> events=facade.getEvents(firstDay);
 
 						if (events.isEmpty())
 							jLabelListOfEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("NoEvents")
@@ -170,11 +171,11 @@ public class CreateQuestionGUI extends JFrame {
 						jComboBoxEvents.removeAllItems();
 						System.out.println("Events " + events);
 
-						for (domain.Event ev : events)
-							modelEvents.addElement(ev);
+						while (events.hasNext())
+							modelEvents.addElement(events.next());
 						jComboBoxEvents.repaint();
 
-						if (events.size() == 0)
+						if (events.isEmpty())
 							jButtonCreate.setEnabled(false);
 						else
 							jButtonCreate.setEnabled(true);
