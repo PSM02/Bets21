@@ -133,16 +133,33 @@ public class DataAccess {
 				q6 = ev17.addQuestion("Golak sartuko dira lehenengo zatian?", 2);
 
 			}
+			q1.addEvent(ev1);
+			q2.addEvent(ev1);
+			q3.addEvent(ev11);
+			q4.addEvent(ev11);
+			q5.addEvent(ev17);
+			q6.addEvent(ev17);
+		
 
 			db.persist(ADMIN);
 			db.persist(user1);
 			db.persist(user2);
+			
+			
 
 			Kuota k1 = q3.addKuota(2, "k1");
 			Kuota k2 = q3.addKuota(2, "k2");
 			Kuota k3 = q4.addKuota(2, "k3");
 			Kuota k4 = q1.addKuota(2, "k4");
 
+			Apustua a1 = k1.addApustua(100, user1, false, null);
+			Apustua a2 = k2.addApustua(100, user1, false, null);
+			Apustua a3 = k4.addApustua(100, user1, false, null);
+			
+			user1.addApustua(a1);
+			user1.addApustua(a2);
+			user1.addApustua(a3);
+			
 			db.persist(k1);
 			db.persist(k2);
 

@@ -170,4 +170,8 @@ public class Question implements Serializable {
 	public Vector<Kuota> getFees() {
 		return fees;
 	}
+	
+	public void addEvent(Event e) {
+		this.event = e;
+	}
 }

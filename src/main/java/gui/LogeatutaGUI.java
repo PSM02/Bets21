@@ -170,7 +170,6 @@ public class LogeatutaGUI extends JFrame{
                 j.add(new JScrollPane(table));
 
                  j.setTitle(user.getUsername()+"'s bets");
-                 j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                  j.pack();
                  j.setVisible(true);
 
