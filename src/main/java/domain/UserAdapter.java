@@ -34,5 +34,10 @@ public class UserAdapter extends  AbstractTableModel {
     }
         return null;
     }
+    
+    @Override
+    public String getColumnName(int col) {
+    return colNames[col];
+    }
 
 }
