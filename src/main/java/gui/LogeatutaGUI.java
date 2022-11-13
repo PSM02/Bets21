@@ -4,9 +4,13 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.AbstractTableModel;
 
 import domain.Registered;
 import domain.User;
+import domain.UserAdapter;
 
 import javax.swing.JButton;
 import java.awt.Font;
@@ -156,5 +160,23 @@ public class LogeatutaGUI extends JFrame{
 			}
 		});
 		contentPane.add(btnNewButton_7);
+		
+		JButton btnNewButton_8 = new JButton(ResourceBundle.getBundle("Etiquetas").getString("Tablade") + user.getUsername()); //$NON-NLS-1$ //$NON-NLS-2$
+        btnNewButton_8.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                AbstractTableModel model=new UserAdapter((Registered) user); 
+                JFrame j=new JFrame();
+                JTable table = new JTable(model);
+                j.add(new JScrollPane(table));
+
+                 j.setTitle(user.getUsername()+"'s bets");
+                 j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                 j.pack();
+                 j.setVisible(true);
+
+            }
+        });
+        btnNewButton_8.setBounds(229, 161, 180, 39);
+        contentPane.add(btnNewButton_8);
 	}
 }
